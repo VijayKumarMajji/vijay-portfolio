@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: #f8f9fa;
+    }
+    header, footer {
+      background-color: #000;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #f8f9fa;
+      font-weight: 600;
+    }
+    .projects-container {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .project-card {
+      background-color: #111;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+    .project-card h3 {
+      margin-top: 0;
+      color: #00aaff;
+    }
+    .project-card p {
+      color: #ccc;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .project-card a {
+      color: #00aaff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/skills">Skills</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="projects-container" data-aos="fade-up">
+    <div class="project-card">
+      <h3>Smart E-Waste Management System</h3>
+      <p>A full-stack web app built using Spring Boot and MongoDB to categorize, bid, and trade e-waste responsibly.</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Resume Matcher</h3>
+      <p>Python tool that scans resumes and matches them with job descriptions using keyword analysis and ML scoring.</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>AppWise Tracker</h3>
+      <p>An Android app that tracks app usage time, visualizes it using graphs, and sends alerts for screen time limits.</p>
+      <a href="#">View Project</a>
+    </div>
+    <!-- Add more projects below as needed -->
+  </section>
+
+  <footer>
+    <p>© 2025 Vijay Kumar Majji | <a href="mailto:vijaykumarmajji2@gmail.com">Contact Me</a></p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>

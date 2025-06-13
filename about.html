@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: #f8f9fa;
+    }
+    header, footer {
+      background-color: #000;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #f8f9fa;
+      font-weight: 600;
+    }
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .about-image img {
+      width: 300px;
+      border-radius: 20px;
+      margin: 1rem;
+    }
+    .about-text {
+      flex: 1;
+      margin: 1rem;
+      min-width: 300px;
+    }
+    .about-text h1 {
+      font-size: 2rem;
+      color: #00aaff;
+    }
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #d1d1d1;
+    }
+    footer a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/skills">Skills</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-section" data-aos="fade-up">
+	<div class="about-image" data-aos="zoom-in">
+	  <div class="profile-container">
+	    <div class="profile-wrapper">
+	      <img src="/images/profile.jpg" alt="Vijay Kumar Majji" class="profile-img" />
+	    </div>
+	    <h2 class="profile-name" data-aos="fade-up">Vijay Kumar Majji</h2>
+	    <p class="profile-title" data-aos="fade-up" data-aos-delay="100">Full-Stack Java Developer</p>
+	  </div>
+	</div>
+
+
+
+    <div class="about-text" data-aos="fade-left">
+      <h1>Hi, I'm Vijay Kumar Majji 👨‍💻</h1>
+      <p>
+        I'm a passionate full-stack Java developer dedicated to building fast, responsive, and user-friendly websites.
+        With strong skills in Spring Boot, Java, SQL, and modern frontend technologies, I turn ideas into clean and functional applications.
+        <br><br>
+        I enjoy working on creative tech projects, exploring UI/UX trends, and learning new tools to stay up-to-date.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Vijay Kumar Majji | <a href="mailto:vijaykumarmajji2@gmail.com">Contact Me</a></p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>
